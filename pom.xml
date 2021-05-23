@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.sylon</groupId>
+    <artifactId>sylon-wealth-management-backend-mock</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>sylon-wealth-management-backend-mock</name>
+    <description>Sylon Wealth Management Backend Mock</description>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    <dependencyManagement>
+    </dependencyManagement>
+    <dependencies>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>uk.co.automatictester</groupId>
+                <artifactId>wiremock-maven-plugin</artifactId>
+                <version>6.0.0</version>
+                <configuration>
+                    <keepRunning>true</keepRunning>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.tomakehurst</groupId>
+                        <artifactId>wiremock-jre8</artifactId>
+                        <version>2.28.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

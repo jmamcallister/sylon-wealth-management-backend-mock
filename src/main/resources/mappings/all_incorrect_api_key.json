@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/query",
+    "queryParameters": {
+      "apikey": {
+        "doesNotMatch": "mock"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "delayDistribution": {
+      "type": "lognormal",
+      "median": 80,
+      "sigma": 0.4
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "all_incorrect_api_key.json"
+  }
+}

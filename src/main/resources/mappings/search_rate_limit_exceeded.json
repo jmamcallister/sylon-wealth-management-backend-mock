@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/query",
+    "queryParameters": {
+      "apikey": {
+        "matches": "mock"
+      },
+      "function": {
+        "matches": "SYMBOL_SEARCH"
+      },
+      "keywords": {
+        "matches": "too_many"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "delayDistribution": {
+      "type": "lognormal",
+      "median": 80,
+      "sigma": 0.4
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "search_rate_limit_exceeded.json"
+  }
+}
