@@ -1,0 +1,6 @@
+{
+  "Global Quote": {
+      "1. symbol": "{{ request.query.symbol }}",
+      "5. price": "{{{pickRandom '100.00' '200.00' '300.00'}}}"
+    }
+}

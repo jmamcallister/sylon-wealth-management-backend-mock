@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/query",
+    "queryParameters": {
+      "apikey": {
+        "matches": "mock"
+      },
+      "function": {
+        "matches": "GLOBAL_QUOTE"
+      },
+      "symbol": {
+        "matches": ".*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "delayDistribution": {
+      "type": "lognormal",
+      "median": 80,
+      "sigma": 0.4
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "quote_dynamic_result_success.json"
+  }
+}
